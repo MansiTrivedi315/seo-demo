@@ -22,9 +22,9 @@ const InterviewPage = ({ interviewsList }) => {
       </Head>
       <h1>InterviewPage</h1>
       <Grid container spacing={2}>
-        {interviewsList?.interviews?.map((d) => {
+        {interviewsList?.interviews?.map((d,i) => {
           return (
-            <Grid item xs={3}>
+            <Grid item xs={3} key={i}>
               <Card sx={{ maxWidth: 345 }}>
                 <CardMedia
                   component="img"
